@@ -5,7 +5,7 @@ const pillars = [
   {
     icon: Satellite,
     title: "Satélite, não celular",
-    desc: "Funciona onde a operação acontece de verdade — mesmo em alto-mar, sem sinal nenhum.",
+    desc: "Funciona onde a operação acontece de verdade — alto-mar, rios, canais e áreas remotas. Sem sinal nenhum.",
   },
   {
     icon: Flag,

@@ -18,7 +18,7 @@ const categories = [
       { q: "Os equipamentos são do cliente ou da KA8?", a: "Os equipamentos são fornecidos pela KA8 em regime de comodato durante a vigência do contrato." },
       { q: "Preciso de internet no local?", a: "Não. A transmissão é feita via satélite diretamente da embarcação. Você só precisa de internet para acessar a plataforma no seu computador ou celular." },
       { q: "Consigo acessar o sistema pelo celular?", a: "Sim. A plataforma é responsiva e pode ser acessada por qualquer navegador, em qualquer dispositivo." },
-      { q: "A KA8 funciona em rios e ambientes fluviais?", a: "Sim. A cobertura satelital funciona em qualquer lugar — alto-mar, rios, canais e áreas remotas." },
+      { q: "A KA8 funciona em rios e ambientes fluviais?", a: "Sim! Atendemos mar e rio. A cobertura satelital funciona em qualquer lugar — alto-mar, rios, canais, hidrovias e áreas remotas. A mesma tecnologia e plataforma para operações marítimas e fluviais." },
       { q: "Por que o satélite é mais confiável que o GSM?", a: "O sinal GSM depende de torres terrestres e não alcança áreas remotas ou em alto-mar. O satélite cobre o planeta inteiro, sem falhas de cobertura." },
       { q: "A KA8 suporta quantas embarcações ao mesmo tempo?", a: "Não há limite. A plataforma escala conforme o tamanho da sua frota." },
     ],

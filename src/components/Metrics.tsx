@@ -3,7 +3,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const metrics = [
   { number: "24/7", title: "Cobertura contínua", desc: "Monitoramento ininterrupto, sem falhas de sinal ou interrupções." },
   { number: "-40%", title: "Redução de custos", desc: "Clientes reportam redução significativa em custos operacionais." },
-  { number: "100%", title: "Satelital. Sem GSM.", desc: "Funciona em alto-mar, rios e áreas remotas. Sem depender de celular." },
+  { number: "100%", title: "Satelital. Sem GSM.", desc: "Funciona em alto-mar, rios, canais e áreas remotas. Mar e rio com a mesma cobertura." },
   { number: "1", title: "Tudo em um painel", desc: "Posição + Combustível + Vídeo integrados em uma única plataforma." },
 ];
 
