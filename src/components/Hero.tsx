@@ -39,7 +39,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg text-ka8-primary-100 mb-8 max-w-[560px] leading-relaxed">
-            Para gestores que precisam saber o que acontece em cada viagem — combustível, rota e risco.
+            Para gestores de embarcações marítimas e fluviais que precisam saber o que acontece em cada viagem — combustível, rota e risco.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center">

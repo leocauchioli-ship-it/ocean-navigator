@@ -15,7 +15,7 @@ const steps = [
     num: "02",
     label: "PASSO 02",
     title: "Transmissão via satélite. Onde o barco estiver.",
-    desc: "Os dados são transmitidos via satélite — sem depender de sinal de celular. Funciona onde a operação realmente acontece: alto-mar, rios, áreas remotas.",
+    desc: "Os dados são transmitidos via satélite — sem depender de sinal de celular. Funciona onde a operação realmente acontece: alto-mar, rios, hidrovias e áreas remotas.",
     link: "Por que satélite?",
     img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
     reverse: true,
