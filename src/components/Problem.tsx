@@ -23,33 +23,31 @@ const Problem = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section-padding section-mid" ref={ref}>
+    <section className="section-padding section-white" ref={ref}>
       <div className="container-ka8">
         <div className="text-center mb-12 reveal">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 text-ka8-text-dark">
             A realidade de quem opera no mar
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-ka8-text-muted max-w-2xl mx-auto text-lg">
             Cada viagem movimenta milhares em combustível. Cada rota envolve risco. Cada decisão acontece longe do seu campo de visão.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {problems.map((p, i) => (
-            <div key={i} className="card-glass reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-10 w-10 rounded-lg bg-destructive/20 flex items-center justify-center">
-                  <p.icon size={20} className="text-destructive" />
-                </div>
+            <div key={i} className="card-ka8 reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
+              <div className="card-icon">
+                <p.icon size={20} />
               </div>
-              <h3 className="font-display font-bold text-lg mb-2">{p.title}</h3>
-              <p className="text-muted-foreground text-sm">{p.desc}</p>
+              <h3 className="font-body font-bold text-base mb-2 text-ka8-text-dark">{p.title}</h3>
+              <p className="text-ka8-text-muted text-sm leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
 
         <div className="reveal text-center">
-          <blockquote className="text-xl md:text-2xl font-display font-bold italic text-primary/90 max-w-2xl mx-auto teal-glow">
+          <blockquote className="text-xl md:text-2xl font-display font-bold italic text-ka8-navy max-w-2xl mx-auto">
             "O prejuízo maior não é o que aparece.<br />
             É o que pode estar acontecendo sem você ver."
           </blockquote>

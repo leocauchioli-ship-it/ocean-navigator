@@ -1,5 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Fish, Ship, Anchor } from "lucide-react";
+import { Fish, Ship, Anchor, ArrowRight } from "lucide-react";
 
 const cases = [
   {
@@ -26,10 +26,10 @@ const UseCases = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="casos-de-uso" className="section-padding section-dark" ref={ref}>
+    <section id="casos-de-uso" className="section-padding section-white" ref={ref}>
       <div className="container-ka8">
         <div className="text-center mb-12 reveal">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 text-ka8-text-dark">
             Soluções para cada tipo de{" "}
             <span className="gradient-text">operação</span>
           </h2>
@@ -37,15 +37,15 @@ const UseCases = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {cases.map((c, i) => (
-            <div key={i} className="card-glass reveal flex flex-col" style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <c.icon size={24} className="text-primary" />
+            <div key={i} className="card-ka8 reveal flex flex-col" style={{ transitionDelay: `${i * 0.1}s` }}>
+              <div className="card-icon">
+                <c.icon size={22} />
               </div>
-              <h3 className="font-display font-bold text-xl mb-3">{c.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">{c.desc}</p>
-              <div className="border-t border-border pt-3 mt-auto">
+              <h3 className="font-body font-bold text-base mb-3 text-ka8-text-dark">{c.title}</h3>
+              <p className="text-ka8-text-muted text-sm leading-relaxed mb-4 flex-1">{c.desc}</p>
+              <div className="border-t border-ka8-navy-100 pt-3 mt-auto">
                 <p className="text-sm font-semibold text-primary">
-                  Resultado: <span className="text-foreground font-normal">{c.result}</span>
+                  Resultado: <span className="text-ka8-text-body font-normal">{c.result}</span>
                 </p>
               </div>
             </div>
