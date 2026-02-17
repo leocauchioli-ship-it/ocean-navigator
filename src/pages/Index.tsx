@@ -4,6 +4,7 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
+import Metrics from "@/components/Metrics";
 import Comparison from "@/components/Comparison";
 import UseCases from "@/components/UseCases";
 import WhyKA8 from "@/components/WhyKA8";
@@ -20,6 +21,7 @@ const Index = () => {
       <Solution />
       <HowItWorks />
       <Features />
+      <Metrics />
       <Comparison />
       <UseCases />
       <WhyKA8 />

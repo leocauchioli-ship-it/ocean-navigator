@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Outfit', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -52,11 +52,22 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         ka8: {
-          teal: "hsl(var(--ka8-teal))",
-          "teal-dark": "hsl(var(--ka8-teal-dark))",
-          "navy-deep": "hsl(var(--ka8-navy-deep))",
-          "navy-mid": "hsl(var(--ka8-navy-mid))",
-          "navy-light": "hsl(var(--ka8-navy-light))",
+          primary: "hsl(var(--ka8-primary))",
+          secondary: "hsl(var(--ka8-secondary))",
+          navy: "hsl(var(--ka8-navy))",
+          azure: "hsl(var(--ka8-azure))",
+          "primary-100": "hsl(var(--ka8-primary-100))",
+          "primary-200": "hsl(var(--ka8-primary-200))",
+          "primary-600": "hsl(var(--ka8-primary-600))",
+          "secondary-100": "hsl(var(--ka8-secondary-100))",
+          "navy-100": "hsl(var(--ka8-navy-100))",
+          "navy-200": "hsl(var(--ka8-navy-200))",
+          "navy-600": "hsl(var(--ka8-navy-600))",
+          "bg-light": "hsl(var(--ka8-bg-light))",
+          "bg-subtle": "hsl(var(--ka8-bg-subtle))",
+          "text-dark": "hsl(var(--ka8-text-dark))",
+          "text-body": "hsl(var(--ka8-text-body))",
+          "text-muted": "hsl(var(--ka8-text-muted))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

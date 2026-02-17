@@ -28,23 +28,31 @@ const WhyKA8 = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="quem-somos" className="section-padding section-mid" ref={ref}>
-      <div className="container-ka8">
+    <section id="quem-somos" className="section-padding section-navy section-kite-bg" ref={ref}>
+      <div className="container-ka8 relative z-10">
         <div className="text-center mb-12 reveal">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
             Não é produto genérico adaptado do terrestre.{" "}
-            <span className="gradient-text">É solução pensada para o mar.</span>
+            <span className="text-ka8-secondary">É solução pensada para o mar.</span>
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {pillars.map((p, i) => (
-            <div key={i} className="card-glass reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <p.icon size={24} className="text-primary" />
+            <div
+              key={i}
+              className="reveal rounded-xl p-7"
+              style={{
+                transitionDelay: `${i * 0.1}s`,
+                background: "rgba(255,255,255,0.05)",
+                border: "1px solid rgba(11,164,174,0.2)",
+              }}
+            >
+              <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
+                <p.icon size={22} className="text-ka8-secondary" />
               </div>
-              <h3 className="font-display font-bold text-lg mb-2">{p.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+              <h3 className="font-body font-bold text-base mb-2 text-white">{p.title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{p.desc}</p>
             </div>
           ))}
         </div>

@@ -40,10 +40,10 @@ const FAQ = () => {
   const toggle = (id: string) => setOpenItem(openItem === id ? null : id);
 
   return (
-    <section id="faq" className="section-padding section-dark" ref={ref}>
+    <section id="faq" className="section-padding section-white" ref={ref}>
       <div className="container-ka8">
         <div className="text-center mb-12 reveal">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 text-ka8-text-dark">
             Perguntas frequentes
           </h2>
         </div>
@@ -57,15 +57,15 @@ const FAQ = () => {
                   const id = `${ci}-${ii}`;
                   const isOpen = openItem === id;
                   return (
-                    <div key={id} className="border border-border rounded-xl overflow-hidden">
+                    <div key={id} className="border border-ka8-navy-100 rounded-xl overflow-hidden bg-background">
                       <button
                         onClick={() => toggle(id)}
-                        className="w-full flex items-center justify-between p-4 text-left hover:bg-secondary/20 transition-colors"
+                        className="w-full flex items-center justify-between p-4 text-left hover:bg-ka8-bg-light transition-colors"
                       >
-                        <span className="text-sm font-medium pr-4">{item.q}</span>
+                        <span className="text-sm font-medium pr-4 text-ka8-text-dark">{item.q}</span>
                         <ChevronDown
                           size={18}
-                          className={`text-muted-foreground shrink-0 transition-transform duration-300 ${
+                          className={`text-ka8-text-muted shrink-0 transition-transform duration-300 ${
                             isOpen ? "rotate-180" : ""
                           }`}
                         />
@@ -74,7 +74,7 @@ const FAQ = () => {
                         className="overflow-hidden transition-all duration-300"
                         style={{ maxHeight: isOpen ? "200px" : "0" }}
                       >
-                        <p className="px-4 pb-4 text-sm text-muted-foreground leading-relaxed">
+                        <p className="px-4 pb-4 text-sm text-ka8-text-muted leading-relaxed">
                           {item.a}
                         </p>
                       </div>
@@ -87,20 +87,20 @@ const FAQ = () => {
         </div>
 
         {/* Contact bar */}
-        <div className="reveal mt-12 card-glass text-center max-w-2xl mx-auto">
-          <p className="font-display font-bold mb-4">Não encontrou sua dúvida? Fale direto com a gente.</p>
+        <div className="reveal mt-12 card-ka8 text-center max-w-2xl mx-auto">
+          <p className="font-display font-bold mb-4 text-ka8-text-dark">Não encontrou sua dúvida? Fale direto com a gente.</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <a href="tel:+5515997987632" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+5515997987632" className="flex items-center gap-2 text-ka8-text-muted hover:text-primary transition-colors">
               <Phone size={16} /> +55 15 99798-7632
             </a>
-            <a href="mailto:contato@ka8.com.br" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="mailto:contato@ka8.com.br" className="flex items-center gap-2 text-ka8-text-muted hover:text-primary transition-colors">
               <Mail size={16} /> contato@ka8.com.br
             </a>
             <a
               href="https://wa.me/5515997987632"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-ka8-primary text-sm py-2 px-4"
+              className="btn-solid text-sm py-2 px-4"
             >
               <MessageCircle size={16} /> WhatsApp
             </a>
