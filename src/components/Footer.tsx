@@ -22,7 +22,7 @@ const Footer = () => {
               Monitoramento satelital marítimo. Visibilidade total para quem opera no mar.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["Cobertura Satelital Global", "Tecnologia Brasileira", "GPS + AIS + IoT"].map((b) => (
+              {["Cobertura Satelital Global", "Tecnologia Brasileira"].map((b) => (
                 <span key={b} className="badge-ka8 text-xs">{b}</span>
               ))}
             </div>
