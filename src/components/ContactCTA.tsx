@@ -21,7 +21,7 @@ const ContactCTA = () => {
               Solicitar Demonstração
             </a>
             <a
-              href="https://wa.me/5515997987632"
+              href="https://wa.me/5515991675910"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-ghost-white text-base"

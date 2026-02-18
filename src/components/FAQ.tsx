@@ -90,14 +90,14 @@ const FAQ = () => {
         <div className="reveal mt-12 card-ka8 text-center max-w-2xl mx-auto">
           <p className="font-display font-bold mb-4 text-ka8-text-dark">Não encontrou sua dúvida? Fale direto com a gente.</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <a href="tel:+5515997987632" className="flex items-center gap-2 text-ka8-text-muted hover:text-primary transition-colors">
-              <Phone size={16} /> +55 15 99798-7632
+             <a href="tel:+5515991675910" className="flex items-center gap-2 text-ka8-text-muted hover:text-primary transition-colors">
+               <Phone size={16} /> +55 (15) 99167-5910
             </a>
             <a href="mailto:contato@ka8.com.br" className="flex items-center gap-2 text-ka8-text-muted hover:text-primary transition-colors">
               <Mail size={16} /> contato@ka8.com.br
             </a>
             <a
-              href="https://wa.me/5515997987632"
+              href="https://wa.me/5515991675910"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-solid text-sm py-2 px-4"

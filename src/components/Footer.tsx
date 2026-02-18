@@ -1,5 +1,5 @@
 import logoLight from "@/assets/logo-light.png";
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const footerLinks = [
   { label: "Solução", href: "#solucao" },
@@ -47,14 +47,8 @@ const Footer = () => {
               <a href="mailto:contato@ka8.com.br" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
                 <Mail size={14} /> contato@ka8.com.br
               </a>
-              <a href="tel:+5515997987632" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <Phone size={14} /> Técnico: +55 (15) 99798-7632
-              </a>
-              <a href="tel:+5591999912844" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <Phone size={14} /> Comercial: +55 (91) 9991-2844
-              </a>
-              <a href="https://wa.me/5585986989899" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <MessageCircle size={14} /> WhatsApp: +55 (85) 9869-9899
+              <a href="tel:+5515991675910" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
+                <Phone size={14} /> +55 (15) 99167-5910
               </a>
               <p>São Paulo/SP • Belém/PA – Brasil</p>
               <p>Segunda a sexta, das 8h às 18h</p>
