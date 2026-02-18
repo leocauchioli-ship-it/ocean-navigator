@@ -15,7 +15,7 @@ const categories = [
   {
     title: "Equipamentos e Conectividade",
     items: [
-      { q: "Os equipamentos são do cliente ou da KA8?", a: "Os equipamentos são fornecidos pela KA8 em regime de comodato durante a vigência do contrato." },
+      
       { q: "Preciso de internet no local?", a: "Não. A transmissão é feita via satélite diretamente da embarcação. Você só precisa de internet para acessar a plataforma no seu computador ou celular." },
       { q: "Consigo acessar o sistema pelo celular?", a: "Sim. A plataforma é responsiva e pode ser acessada por qualquer navegador, em qualquer dispositivo." },
       { q: "A KA8 funciona em rios e ambientes fluviais?", a: "Sim! Atendemos mar e rio. A cobertura satelital funciona em qualquer lugar — alto-mar, rios, canais, hidrovias e áreas remotas. A mesma tecnologia e plataforma para operações marítimas e fluviais." },
