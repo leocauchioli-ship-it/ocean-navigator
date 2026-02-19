@@ -56,7 +56,7 @@ const AISensor = () => {
               Tecnologia Omnicom de ponta global para análise preditiva em tempo real
             </p>
             <p className="text-ka8-text-body text-[15px] leading-relaxed mb-8">
-              Utilizamos sensores Omnicom, referência mundial em telemetria de combustível, equipados com IA embarcada que realiza análise preditiva diretamente no equipamento — sem necessidade de enviar dados para processamento externo.
+              Utilizamos sensores Omnicom, referência mundial em telemetria de combustível, equipados com IA embarcada que realiza análise preditiva diretamente no equipamento, sem necessidade de enviar dados para processamento externo.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

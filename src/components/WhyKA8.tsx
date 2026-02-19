@@ -5,7 +5,7 @@ const pillars = [
   {
     icon: Satellite,
     title: "Satélite, não celular",
-    desc: "Funciona onde a operação acontece de verdade — alto-mar, rios, canais e áreas remotas. Sem sinal nenhum.",
+    desc: "Funciona onde a operação acontece de verdade: alto-mar, rios, canais e áreas remotas. Sem sinal nenhum.",
   },
   {
     icon: Flag,
@@ -15,7 +15,7 @@ const pillars = [
   {
     icon: Link2,
     title: "Integração total",
-    desc: "Posição + telemetria + vídeo na mesma lógica de gestão. Não é colagem de sistemas — é uma plataforma.",
+    desc: "Posição + telemetria + vídeo na mesma lógica de gestão. Não é colagem de sistemas, é uma plataforma.",
   },
   {
     icon: Handshake,
