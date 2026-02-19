@@ -6,9 +6,9 @@ const categories = [
   {
     title: "Serviço e Contratação",
     items: [
-      { q: "Como funciona o serviço da KA8?", a: "A KA8 instala sensores e módulos de comunicação na sua embarcação. Os dados são transmitidos via satélite para a nossa plataforma, onde você acompanha tudo em tempo real — posição, combustível, vídeo e mais." },
+      { q: "Como funciona o serviço da KA8?", a: "A KA8 instala sensores e módulos de comunicação na sua embarcação. Os dados são transmitidos via satélite para a nossa plataforma, onde você acompanha tudo em tempo real — posição, telemetria, vídeo e mais." },
       { q: "Qual o período dos planos?", a: "Trabalhamos com planos mensais e anuais, adaptados ao tamanho da sua frota e às suas necessidades operacionais. Entre em contato para uma proposta personalizada." },
-      { q: "É possível contratar apenas parte dos serviços?", a: "Sim. A plataforma é modular — você pode começar com rastreamento e adicionar combustível, vídeo e alertas conforme sua necessidade." },
+      { q: "É possível contratar apenas parte dos serviços?", a: "Sim. A plataforma é modular — você pode começar com rastreamento e adicionar telemetria, vídeo e alertas conforme sua necessidade." },
       { q: "Qual o custo do serviço?", a: "O custo depende do número de embarcações, dos módulos contratados e da frequência de atualização. Solicite uma demonstração e receba uma proposta personalizada." },
     ],
   },

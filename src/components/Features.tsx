@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useState } from "react";
-import { Satellite, Fuel, Video, Check } from "lucide-react";
+import { Satellite, Gauge, Video, Check } from "lucide-react";
 
 const tabs = [
   {
@@ -22,11 +22,11 @@ const tabs = [
   },
   {
     id: "fuel",
-    label: "Combustível",
-    icon: Fuel,
+    label: "Telemetria",
+    icon: Gauge,
     title: "Consumo deixou de ser estimativa.",
     bullets: [
-      "Monitoramento preciso de múltiplos tanques em tempo real",
+      "Monitoramento preciso de múltiplos ativos em tempo real",
       "Alertas automáticos para consumo fora do padrão",
       "Dados que permitem justificar custos operacionais com prova concreta",
     ],

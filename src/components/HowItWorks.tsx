@@ -24,7 +24,7 @@ const steps = [
     num: "03",
     label: "PASSO 03",
     title: "Você gerencia. De qualquer lugar.",
-    desc: "Acesse o painel online com posição atualizada, consumo de múltiplos tanques, vídeo integrado e histórico completo de rotas — de qualquer dispositivo, a qualquer hora.",
+    desc: "Você acessa uma plataforma unificada com posição atualizada, telemetria de múltiplos ativos, vídeo integrado e histórico completo de rotas — centralizando informações que hoje estão fragmentadas em várias ferramentas. Tudo em um lugar, de qualquer dispositivo, a qualquer hora.",
     link: "Ver o painel",
     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
     reverse: false,

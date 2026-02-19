@@ -4,6 +4,7 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
+import AISensor from "@/components/AISensor";
 import Metrics from "@/components/Metrics";
 import Comparison from "@/components/Comparison";
 import UseCases from "@/components/UseCases";
@@ -21,6 +22,7 @@ const Index = () => {
       <Solution />
       <HowItWorks />
       <Features />
+      <AISensor />
       <Metrics />
       <Comparison />
       <UseCases />

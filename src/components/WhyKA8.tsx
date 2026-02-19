@@ -15,7 +15,7 @@ const pillars = [
   {
     icon: Link2,
     title: "Integração total",
-    desc: "Posição + combustível + vídeo na mesma lógica de gestão. Não é colagem de sistemas — é uma plataforma.",
+    desc: "Posição + telemetria + vídeo na mesma lógica de gestão. Não é colagem de sistemas — é uma plataforma.",
   },
   {
     icon: Handshake,

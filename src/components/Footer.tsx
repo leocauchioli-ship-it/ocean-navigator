@@ -18,8 +18,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <img src={logoLight} alt="KA8" className="h-12 mb-4" />
-            <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.6)" }}>
-              Monitoramento satelital marítimo. Visibilidade total para quem opera no mar.
+            <p className="text-sm font-medium leading-relaxed mb-1" style={{ color: "rgba(255,255,255,0.7)" }}>
+              Visão do Alto, Controle Total
+            </p>
+            <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.45)" }}>
+              Inteligência operacional para quem opera no mar.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Cobertura Satelital Global", "Tecnologia Brasileira"].map((b) => (
@@ -58,7 +61,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs" style={{ borderTop: "1px solid rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.4)" }}>
-          <p>© 2025 KA8 Sistemas de Rastreamento. Todos os direitos reservados.</p>
+          <p>© 2025 KA8 — Visão do Alto, Controle Total. Todos os direitos reservados.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-ka8-secondary transition-colors">Política de Privacidade</a>
             <a href="#" className="hover:text-ka8-secondary transition-colors">Termos de Uso</a>
