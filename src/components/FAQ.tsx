@@ -6,9 +6,9 @@ const categories = [
   {
     title: "Serviço e Contratação",
     items: [
-      { q: "Como funciona o serviço da KA8?", a: "A KA8 instala sensores e módulos de comunicação na sua embarcação. Os dados são transmitidos via satélite para a nossa plataforma, onde você acompanha tudo em tempo real — posição, telemetria, vídeo e mais." },
+      { q: "Como funciona o serviço da KA8?", a: "A KA8 instala sensores e módulos de comunicação na sua embarcação. Os dados são transmitidos via satélite para a nossa plataforma, onde você acompanha tudo em tempo real: posição, telemetria, vídeo e mais." },
       { q: "Qual o período dos planos?", a: "Trabalhamos com planos mensais e anuais, adaptados ao tamanho da sua frota e às suas necessidades operacionais. Entre em contato para uma proposta personalizada." },
-      { q: "É possível contratar apenas parte dos serviços?", a: "Sim. A plataforma é modular — você pode começar com rastreamento e adicionar telemetria, vídeo e alertas conforme sua necessidade." },
+      { q: "É possível contratar apenas parte dos serviços?", a: "Sim. A plataforma é modular. Você pode começar com rastreamento e adicionar telemetria, vídeo e alertas conforme sua necessidade." },
       { q: "Qual o custo do serviço?", a: "O custo depende do número de embarcações, dos módulos contratados e da frequência de atualização. Solicite uma demonstração e receba uma proposta personalizada." },
     ],
   },
@@ -18,7 +18,7 @@ const categories = [
       
       { q: "Preciso de internet no local?", a: "Não. A transmissão é feita via satélite diretamente da embarcação. Você só precisa de internet para acessar a plataforma no seu computador ou celular." },
       { q: "Consigo acessar o sistema pelo celular?", a: "Sim. A plataforma é responsiva e pode ser acessada por qualquer navegador, em qualquer dispositivo." },
-      { q: "A KA8 funciona em rios e ambientes fluviais?", a: "Sim! Atendemos mar e rio. A cobertura satelital funciona em qualquer lugar — alto-mar, rios, canais, hidrovias e áreas remotas. A mesma tecnologia e plataforma para operações marítimas e fluviais." },
+      { q: "A KA8 funciona em rios e ambientes fluviais?", a: "Sim! Atendemos mar e rio. A cobertura satelital funciona em qualquer lugar: alto-mar, rios, canais, hidrovias e áreas remotas. A mesma tecnologia e plataforma para operações marítimas e fluviais." },
       { q: "Por que o satélite é mais confiável que o GSM?", a: "O sinal GSM depende de torres terrestres e não alcança áreas remotas ou em alto-mar. O satélite cobre o planeta inteiro, sem falhas de cobertura." },
       { q: "A KA8 suporta quantas embarcações ao mesmo tempo?", a: "Não há limite. A plataforma escala conforme o tamanho da sua frota." },
     ],
@@ -26,7 +26,7 @@ const categories = [
   {
     title: "Suporte e Prazos",
     items: [
-      { q: "Vocês oferecem suporte em caso de falhas?", a: "Sim. O suporte é feito diretamente com a equipe técnica da KA8 — sem intermediários, sem ticket, sem espera." },
+      { q: "Vocês oferecem suporte em caso de falhas?", a: "Sim. O suporte é feito diretamente com a equipe técnica da KA8, sem intermediários, sem ticket, sem espera." },
       { q: "Quais os prazos de entrega e instalação?", a: "O prazo varia conforme a localização e o tamanho da frota, mas trabalhamos com agilidade para minimizar o tempo de setup." },
       { q: "Os dados ficam armazenados? Posso acessar históricos?", a: "Sim. Todos os dados são armazenados na nuvem com histórico completo, acessível a qualquer momento." },
     ],

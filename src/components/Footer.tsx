@@ -53,7 +53,7 @@ const Footer = () => {
               <a href="tel:+5515991675910" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
                 <Phone size={14} /> +55 (15) 99167-5910
               </a>
-              <p>São Paulo/SP • Belém/PA – Brasil</p>
+              <p>São Paulo/SP • Belém/PA, Brasil</p>
               <p>Segunda a sexta, das 8h às 18h</p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs" style={{ borderTop: "1px solid rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.4)" }}>
-          <p>© 2025 KA8 — Visão do Alto, Controle Total. Todos os direitos reservados.</p>
+          <p>© 2025 KA8. Visão do Alto, Controle Total. Todos os direitos reservados.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-ka8-secondary transition-colors">Política de Privacidade</a>
             <a href="#" className="hover:text-ka8-secondary transition-colors">Termos de Uso</a>

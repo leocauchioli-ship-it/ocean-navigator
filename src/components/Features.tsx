@@ -11,7 +11,7 @@ const tabs = [
     bullets: [
       "Atualização frequente de posição via satélite, sem depender de sinal celular",
       "Histórico completo de rotas com horário, velocidade e direção",
-      "Cobertura total em alto-mar, rios, canais, portos e áreas remotas — mar e fluvial",
+      "Cobertura total em alto-mar, rios, canais, portos e áreas remotas, mar e fluvial",
     ],
     testimonial: {
       quote: "Com a KA8, sei exatamente onde cada embarcação está. Isso mudou a forma como gerencio minha frota.",

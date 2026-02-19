@@ -14,7 +14,7 @@ const Comparison = () => {
               <span className="gradient-text">não é suficiente</span>
             </h2>
             <p className="text-ka8-text-muted text-base leading-relaxed">
-              Sistemas baseados em GSM perdem sinal onde a operação realmente acontece — no mar e nos rios. A KA8 usa satélite — cobertura marítima e fluvial, sem interrupção.
+              Sistemas baseados em GSM perdem sinal onde a operação realmente acontece, no mar e nos rios. A KA8 usa satélite: cobertura marítima e fluvial, sem interrupção.
             </p>
           </div>
 
