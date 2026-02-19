@@ -4,7 +4,7 @@ const metrics = [
   { number: "24/7", title: "Cobertura contínua", desc: "Monitoramento ininterrupto, sem falhas de sinal ou interrupções." },
   { number: "-40%", title: "Redução de custos", desc: "Clientes reportam redução significativa em custos operacionais." },
   { number: "100%", title: "Satelital. Sem GSM.", desc: "Funciona em alto-mar, rios, canais e áreas remotas. Mar e rio com a mesma cobertura." },
-  { number: "1", title: "Tudo em um painel", desc: "Posição + Combustível + Vídeo integrados em uma única plataforma." },
+  { number: "1", title: "Tudo em um painel", desc: "Posição + Telemetria + Vídeo integrados em uma única plataforma." },
 ];
 
 const Metrics = () => {
@@ -30,7 +30,7 @@ const Metrics = () => {
                 border: "1px solid rgba(11,164,174,0.2)",
               }}
             >
-              <div className="font-display text-5xl font-black text-ka8-secondary leading-none mb-3">
+              <div className="font-display text-5xl font-extrabold text-ka8-secondary leading-none mb-3">
                 {m.number}
               </div>
               <div className="font-body text-[15px] font-bold text-white mb-2">{m.title}</div>

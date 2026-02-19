@@ -46,7 +46,7 @@ const Comparison = () => {
               <rect x="60" y="55" width="100" height="28" rx="4" fill="#E6F7F8" />
               <text x="110" y="74" fontFamily="Inter" fontSize="10" fontWeight="600" fill="#0BA4AE" textAnchor="middle">Posição ✓</text>
               <rect x="220" y="55" width="100" height="28" rx="4" fill="#E6F7F8" />
-              <text x="270" y="74" fontFamily="Inter" fontSize="10" fontWeight="600" fill="#0BA4AE" textAnchor="middle">Combustível ✓</text>
+              <text x="270" y="74" fontFamily="Inter" fontSize="10" fontWeight="600" fill="#0BA4AE" textAnchor="middle">Telemetria ✓</text>
               <rect x="380" y="55" width="100" height="28" rx="4" fill="#E6F7F8" />
               <text x="430" y="74" fontFamily="Inter" fontSize="10" fontWeight="600" fill="#0BA4AE" textAnchor="middle">Vídeo ✓</text>
 

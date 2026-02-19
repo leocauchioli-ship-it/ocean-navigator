@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -256,8 +256,10 @@
   .marquee-track {
     display: flex;
     gap: 48px;
-    animation: marquee 30s linear infinite;
+    animation: marquee 40s linear infinite;
     width: max-content;
+    will-change: transform;
+    backface-visibility: hidden;
   }
 
   /* Ping */
