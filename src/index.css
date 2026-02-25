@@ -256,7 +256,7 @@
   .marquee-track {
     display: flex;
     gap: 48px;
-    animation: marquee 20s linear infinite;
+    animation: marquee 45s linear infinite;
     width: max-content;
     will-change: transform;
     backface-visibility: hidden;

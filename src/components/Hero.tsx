@@ -53,7 +53,9 @@ const Hero = () => {
 
       {/* Logo strip marquee */}
       <div className="relative z-10 border-t" style={{
-        background: "rgba(255,255,255,0.06)",
+        background: "rgba(255,255,255,0.08)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
         borderColor: "rgba(255,255,255,0.1)",
       }}>
         <div className="py-5 overflow-hidden">
