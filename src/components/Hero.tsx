@@ -1,12 +1,11 @@
 import heroBg from "@/assets/background.png";
 import { ArrowRight, Play } from "lucide-react";
 
-const segments = [
-  "Empresa de Pesca", "Transporte de Carga", "Embarcações de Apoio",
-  "Petroleiros", "Rebocadores", "Operações Fluviais", "Iates e Lanchas",
+const baseSegments = [
   "Empresa de Pesca", "Transporte de Carga", "Embarcações de Apoio",
   "Petroleiros", "Rebocadores", "Operações Fluviais", "Iates e Lanchas",
 ];
+const segments = [...baseSegments, ...baseSegments, ...baseSegments, ...baseSegments];
 
 const Hero = () => {
   return (

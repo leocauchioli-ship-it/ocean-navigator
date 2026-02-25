@@ -72,7 +72,7 @@ const Features = () => {
         </div>
 
         {/* Tabs */}
-        <div className="reveal flex gap-1 mb-10 border-b-2 border-ka8-navy-100 overflow-x-auto">
+        <div className="reveal flex gap-1 mb-10 border-b-2 border-ka8-navy-100 overflow-x-auto scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {tabs.map((tab) => (
             <button
               key={tab.id}
