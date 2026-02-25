@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div className="container-ka8 flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center">
-          <img src={pastHero ? logoPos : logoNeg} alt="KA8" className="h-9 transition-all duration-500" />
+          <img src={pastHero ? logoNeg : logoPos} alt="KA8" className="h-9 transition-all duration-500" />
         </a>
 
         {/* Desktop */}
