@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoPos from "@/assets/logo-marca-pos.png";
+import logoNav from "@/assets/logo-ka8-nav.png";
 
 const navLinks = [
   { label: "Solução", href: "#solucao" },
@@ -22,14 +22,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-background border-b transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
         scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : ""
       }`}
-      style={{ borderColor: "hsl(var(--ka8-navy-100))" }}
+      style={{
+        background: "rgba(255,255,255,0.85)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+        borderColor: "hsl(var(--ka8-navy-100))",
+      }}
     >
       <div className="container-ka8 flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center">
-          <img src={logoPos} alt="KA8" className="h-9" />
+          <img src={logoNav} alt="KA8" className="h-9" />
         </a>
 
         {/* Desktop */}
@@ -62,7 +67,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-background border-t" style={{ borderColor: "hsl(var(--ka8-navy-100))" }}>
+        <div className="md:hidden border-t" style={{ background: "rgba(255,255,255,0.95)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", borderColor: "hsl(var(--ka8-navy-100))" }}>
           <div className="container-ka8 py-4 px-4 flex flex-col gap-3">
             {navLinks.map((link) => (
               <a
