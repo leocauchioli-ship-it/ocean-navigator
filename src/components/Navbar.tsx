@@ -12,12 +12,14 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
   const [pastHero, setPastHero] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
-      setPastHero(window.scrollY > 20);
+      setScrolled(window.scrollY > 20);
+      setPastHero(window.scrollY > window.innerHeight * 0.85);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -26,13 +28,13 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ${
-        pastHero ? "shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : ""
+        scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : ""
       }`}
       style={{
-        background: pastHero ? "rgba(255,255,255,0.55)" : "transparent",
-        backdropFilter: pastHero ? "blur(16px)" : "none",
-        WebkitBackdropFilter: pastHero ? "blur(16px)" : "none",
-        borderColor: pastHero ? "hsl(var(--ka8-navy-100))" : "transparent",
+        background: scrolled ? "rgba(255,255,255,0.55)" : "transparent",
+        backdropFilter: scrolled ? "blur(16px)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(16px)" : "none",
+        borderColor: scrolled ? "hsl(var(--ka8-navy-100))" : "transparent",
       }}
     >
       <div className="container-ka8 flex items-center justify-between h-16 px-4">
