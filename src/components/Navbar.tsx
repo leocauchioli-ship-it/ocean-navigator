@@ -17,8 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      const heroHeight = window.innerHeight * 0.85;
-      setPastHero(window.scrollY > heroHeight);
+      setPastHero(window.scrollY > 20);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -38,7 +37,7 @@ const Navbar = () => {
     >
       <div className="container-ka8 flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center">
-          <img src={pastHero ? logoPos : logoNeg} alt="KA8" className="h-9 transition-all duration-300" />
+          <img src={pastHero ? logoPos : logoNeg} alt="KA8" className="h-9 transition-all duration-500" />
         </a>
 
         {/* Desktop */}
