@@ -26,7 +26,7 @@ const Navbar = () => {
         scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,0.08)]" : ""
       }`}
       style={{
-        background: "rgba(255,255,255,0.85)",
+        background: "rgba(255,255,255,0.65)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
         borderColor: "hsl(var(--ka8-navy-100))",
