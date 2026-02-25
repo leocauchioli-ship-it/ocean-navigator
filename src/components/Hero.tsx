@@ -1,4 +1,4 @@
-import fundoEscuro from "@/assets/fundo-escuro.png";
+import heroBg from "@/assets/background.png";
 import { ArrowRight, Play } from "lucide-react";
 
 const segments = [
@@ -10,13 +10,12 @@ const segments = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[88vh] flex flex-col justify-center overflow-hidden" style={{
-      background: "linear-gradient(160deg, hsl(var(--ka8-navy)) 0%, hsl(var(--ka8-azure)) 60%, hsl(var(--ka8-secondary)) 100%)",
-    }}>
-      {/* Background overlay */}
-      <div className="absolute inset-0 opacity-[0.08]" style={{
-        backgroundImage: `url(${fundoEscuro})`,
+    <section className="relative min-h-[88vh] flex flex-col justify-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0" style={{
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }} />
 
       <div className="container-ka8 relative z-10 px-4 pt-24 pb-16 flex-1 flex flex-col justify-center">
