@@ -73,7 +73,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t" style={{ background: "rgba(255,255,255,0.95)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", borderColor: "hsl(var(--ka8-navy-100))" }}>
-          <div className="container-ka8 py-4 px-4 flex flex-col gap-3">
+          <div className="container-ka8 py-4 px-4 flex flex-col items-center gap-3">
             {navLinks.map((link) => (
               <a
                 key={link.href}
