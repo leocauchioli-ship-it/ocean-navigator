@@ -1,5 +1,5 @@
 import logoLight from "@/assets/logo-light.png";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MessageCircle } from "lucide-react";
 
 const footerLinks = [
   { label: "Solução", href: "#solucao" },
@@ -22,7 +22,7 @@ const Footer = () => {
               Visão do Alto, Controle Total
             </p>
             <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.45)" }}>
-              Inteligência operacional para quem opera no mar.
+              Inteligência operacional para quem opera no ambiente aquático.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Cobertura Satelital Global", "Tecnologia Brasileira"].map((b) => (
@@ -50,11 +50,13 @@ const Footer = () => {
               <a href="mailto:contato@ka8.com.br" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
                 <Mail size={14} /> contato@ka8.com.br
               </a>
-              <a href="tel:+5515991675910" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <Phone size={14} /> +55 (15) 99167-5910
+              <a href="tel:+5515997987632" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
+                <Phone size={14} /> +55 (15) 99798-7632
+              </a>
+              <a href="https://wa.me/5515997987632" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
+                <MessageCircle size={14} /> WhatsApp: +55 (15) 99798-7632
               </a>
               <p>São Paulo/SP • Belém/PA, Brasil</p>
-              <p>Segunda a sexta, das 8h às 18h</p>
             </div>
           </div>
         </div>

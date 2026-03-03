@@ -1,5 +1,8 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ArrowRight } from "lucide-react";
+import imgStep1 from "@/assets/device-rastreador-satelite-solar.png";
+import imgStep2 from "@/assets/rastreador-satelite.png";
+import imgStep3 from "@/assets/painel-unificado.png";
 
 const steps = [
   {
@@ -8,16 +11,18 @@ const steps = [
     title: "Instalação integrada, sem interferir na operação",
     desc: "Módulos e sensores são instalados na embarcação de forma integrada, sem interferir na operação. O setup é rápido e a embarcação volta ao mar rapidamente.",
     link: "Ver como instalamos",
-    img: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&auto=format&fit=crop&q=80",
+    img: imgStep1,
+    alt: "Rastreador satelital KA8 com painel solar em modelos horizontal e vertical",
     reverse: false,
   },
   {
     num: "02",
     label: "PASSO 02",
     title: "Transmissão via satélite. Onde o barco estiver.",
-    desc: "Os dados são transmitidos via satélite, sem depender de sinal de celular. Funciona onde a operação realmente acontece: alto-mar, rios, hidrovias e áreas remotas.",
+    desc: "Os dados são transmitidos via satélite, sem depender de sinal de celular. Funciona onde a operação realmente acontece: hidrovias, alto-mar e áreas remotas.",
     link: "Por que satélite?",
-    img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
+    img: imgStep2,
+    alt: "Diagrama de comunicação satelital: satélite em órbita transmitindo dados para rastreador instalado em embarcação",
     reverse: true,
   },
   {
@@ -26,7 +31,8 @@ const steps = [
     title: "Você gerencia. De qualquer lugar.",
     desc: "Você acessa uma plataforma unificada com posição atualizada, telemetria de múltiplos ativos, vídeo integrado e histórico completo de rotas, centralizando informações que hoje estão fragmentadas em várias ferramentas. Tudo em um lugar, de qualquer dispositivo, a qualquer hora.",
     link: "Ver o painel",
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
+    img: imgStep3,
+    alt: "Gestor acessando painel KA8 via tablet para monitorar embarcação em tempo real",
     reverse: false,
   },
 ];
@@ -59,7 +65,7 @@ const HowItWorks = () => {
               </div>
               <div className={step.reverse ? "md:[direction:ltr]" : ""}>
                 <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(7,57,104,0.15)]">
-                  <img src={step.img} alt={step.title} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
+                  <img src={step.img} alt={step.alt} className="w-full h-auto object-contain aspect-[4/3] bg-white p-4" loading="lazy" />
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const ContactCTA = () => {
       <div className="container-ka8 relative z-10">
         <div className="reveal max-w-2xl mx-auto">
           <h2 className="font-display text-3xl md:text-[44px] font-extrabold text-white leading-tight mb-4">
-            Transforme a forma como você gerencia sua operação marítima.
+            Transforme a forma como você gerencia sua operação marítima e fluvial.
           </h2>
           <p className="text-lg mb-10" style={{ color: "rgba(255,255,255,0.82)" }}>
             Fale com um especialista e veja como a KA8 pode reduzir custos e trazer clareza à sua frota.
@@ -21,7 +21,7 @@ const ContactCTA = () => {
               Solicitar Demonstração
             </a>
             <a
-              href="https://wa.me/5515991675910"
+              href="https://wa.me/5515997987632"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-ghost-white text-base"
