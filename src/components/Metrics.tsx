@@ -24,13 +24,13 @@ const Metrics = () => {
           {metrics.map((m, i) => (
             <div
               key={i}
-              className="rounded-xl p-8 text-center"
+              className="rounded-xl p-5 md:p-8 text-center"
               style={{
                 background: "rgba(255,255,255,0.05)",
                 border: "1px solid rgba(11,164,174,0.2)",
               }}
             >
-              <div className="font-display text-5xl font-extrabold text-ka8-secondary leading-none mb-3">
+              <div className="font-display text-3xl md:text-5xl font-extrabold text-ka8-secondary leading-none mb-3">
                 {m.number}
               </div>
               <div className="font-body text-[15px] font-bold text-white mb-2">{m.title}</div>

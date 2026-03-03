@@ -26,18 +26,18 @@ const Solution = () => {
 
         <div className="reveal max-w-3xl mx-auto">
           <div className="grid grid-cols-2 gap-0 rounded-xl overflow-hidden border border-ka8-navy-100 bg-background">
-            <div className="p-4 bg-ka8-bg-subtle text-center font-display font-bold text-ka8-text-muted text-sm border-b border-ka8-navy-100">
+            <div className="p-3 md:p-4 bg-ka8-bg-subtle text-center font-display font-bold text-ka8-text-muted text-xs md:text-sm border-b border-ka8-navy-100">
               ANTES
             </div>
-            <div className="p-4 bg-ka8-primary-100 text-center font-display font-bold text-primary text-sm border-b border-ka8-navy-100">
+            <div className="p-3 md:p-4 bg-ka8-primary-100 text-center font-display font-bold text-primary text-xs md:text-sm border-b border-ka8-navy-100">
               DEPOIS
             </div>
             {rows.map((r, i) => (
               <div key={i} className="contents">
-                <div className="p-4 text-sm text-ka8-text-muted border-b border-ka8-navy-100 bg-background">
+                <div className="p-3 md:p-4 text-xs md:text-sm text-ka8-text-muted border-b border-ka8-navy-100 bg-background">
                   {r.before}
                 </div>
-                <div className="p-4 text-sm text-ka8-text-dark font-medium border-b border-ka8-navy-100 bg-ka8-primary-100/50 border-l border-ka8-navy-100">
+                <div className="p-3 md:p-4 text-xs md:text-sm text-ka8-text-dark font-medium border-b border-ka8-navy-100 bg-ka8-primary-100/50 border-l border-ka8-navy-100">
                   {r.after}
                 </div>
               </div>

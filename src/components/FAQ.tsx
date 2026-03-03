@@ -79,7 +79,7 @@ const FAQ = () => {
                       </button>
                       <div
                         className="overflow-hidden transition-all duration-300"
-                        style={{ maxHeight: isOpen ? "300px" : "0" }}
+                        style={{ maxHeight: isOpen ? "500px" : "0" }}
                       >
                         <p className="px-4 pb-4 text-sm text-ka8-text-muted leading-relaxed">
                           {item.a}
