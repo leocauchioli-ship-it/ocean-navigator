@@ -13,13 +13,11 @@ const navLinks = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [pastHero, setPastHero] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
-      setPastHero(window.scrollY > window.innerHeight * 0.85);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -39,7 +37,7 @@ const Navbar = () => {
     >
       <div className="container-ka8 flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center">
-          <img src={pastHero ? logoNeg : logoPos} alt="KA8" className="h-9 transition-all duration-500" />
+          <img src={scrolled ? logoNeg : logoPos} alt="KA8" className="h-9 transition-all duration-500" />
         </a>
 
         {/* Desktop */}
@@ -49,23 +47,23 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium transition-colors ${
-                pastHero ? "text-ka8-text-body hover:text-primary" : "text-white/80 hover:text-white"
+                scrolled ? "text-ka8-text-body hover:text-primary" : "text-white/80 hover:text-white"
               }`}
             >
               {link.label}
             </a>
           ))}
-          <a href="#contato" className={`text-sm ${pastHero ? "btn-ghost" : "btn-ghost-white"}`}>
+          <a href="#contato" className={`text-sm ${scrolled ? "btn-ghost" : "btn-ghost-white"}`}>
             Fale Conosco
           </a>
-          <a href="#contato" className={`text-sm ${pastHero ? "btn-solid" : "btn-white"}`}>
+          <a href="#contato" className={`text-sm ${scrolled ? "btn-solid" : "btn-white"}`}>
             Solicitar Demo
           </a>
         </div>
 
         {/* Mobile hamburger */}
         <button
-          className={`md:hidden ${pastHero ? "text-foreground" : "text-white"}`}
+          className={`md:hidden ${scrolled ? "text-foreground" : "text-white"}`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
