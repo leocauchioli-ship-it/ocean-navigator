@@ -11,7 +11,7 @@ const tabs = [
     bullets: [
       "Atualização frequente de posição via satélite, sem depender de sinal celular",
       "Histórico completo de rotas com horário, velocidade e direção",
-      "Cobertura total em alto-mar, rios, canais, portos e áreas remotas, mar e fluvial",
+      "Cobertura total em hidrovias, alto-mar, portos e áreas remotas",
     ],
     testimonial: {
       quote: "Com a KA8, sei exatamente onde cada embarcação está. Isso mudou a forma como gerencio minha frota.",
@@ -45,7 +45,7 @@ const tabs = [
     bullets: [
       "Vídeo integrado à posição e telemetria na mesma plataforma",
       "Visualização remota da operação em tempo real",
-      "Contexto completo: dados + imagem, sem precisar ligar para o capitão",
+      "Contexto completo: dados + imagem, sem precisar ligar para quem está a bordo",
     ],
     testimonial: {
       quote: "A integração de vídeo com o rastreamento nos deu um nível de controle que não imaginávamos possível.",

@@ -15,7 +15,7 @@ const problems = [
   {
     icon: ShieldQuestion,
     title: "Relatos que nem sempre são verificáveis",
-    desc: "Você depende da versão do capitão. E não tem como confirmar.",
+    desc: "Você depende exclusivamente do relato de quem está a bordo. E não tem como confirmar.",
   },
 ];
 
@@ -27,7 +27,7 @@ const Problem = () => {
       <div className="container-ka8">
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 text-ka8-text-dark">
-            A realidade de quem opera no mar
+            A realidade de quem opera no ambiente aquático
           </h2>
           <p className="text-ka8-text-muted max-w-2xl mx-auto text-lg">
             Cada viagem movimenta milhares em combustível. Cada rota envolve risco. Cada decisão acontece longe do seu campo de visão.

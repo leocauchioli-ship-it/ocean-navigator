@@ -8,6 +8,7 @@ import AISensor from "@/components/AISensor";
 import Metrics from "@/components/Metrics";
 import Comparison from "@/components/Comparison";
 import UseCases from "@/components/UseCases";
+import AboutKA8 from "@/components/AboutKA8";
 import WhyKA8 from "@/components/WhyKA8";
 import FAQ from "@/components/FAQ";
 import ContactCTA from "@/components/ContactCTA";
@@ -26,6 +27,7 @@ const Index = () => {
       <Metrics />
       <Comparison />
       <UseCases />
+      <AboutKA8 />
       <WhyKA8 />
       <FAQ />
       <ContactCTA />

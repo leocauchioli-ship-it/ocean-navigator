@@ -1,26 +1,27 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Brain, Zap, BarChart3, BatteryCharging, ArrowRight } from "lucide-react";
+import { Crosshair, Droplets, Bell, Activity, ArrowRight } from "lucide-react";
+import sensorImg from "@/assets/sensor-combustivel.png";
 
 const differentials = [
   {
-    icon: Brain,
-    title: "Processamento local",
-    desc: "Análise acontece dentro do próprio sensor",
+    icon: Crosshair,
+    title: "Tecnologia capacitiva",
+    desc: "Alta precisão na medição de nível de combustível",
   },
   {
-    icon: Zap,
-    title: "Alertas instantâneos",
-    desc: "Identificação de consumo anormal em tempo real",
+    icon: Droplets,
+    title: "Margem de erro < 1%",
+    desc: "Dados confiáveis para tomada de decisão",
   },
   {
-    icon: BarChart3,
-    title: "Dados precisos",
-    desc: "Monitoramento de múltiplos tanques com alta frequência",
+    icon: Bell,
+    title: "Detecção imediata",
+    desc: "Alertas de drenagens ou abastecimentos irregulares",
   },
   {
-    icon: BatteryCharging,
-    title: "Autonomia",
-    desc: "Não depende de conexão contínua para processar padrões",
+    icon: Activity,
+    title: "Monitoramento contínuo",
+    desc: "Sem interferência na operação da embarcação",
   },
 ];
 
@@ -45,18 +46,18 @@ const AISensor = () => {
                 <span className="ping-slow absolute inline-flex h-full w-full rounded-full opacity-75" style={{ background: "hsl(var(--ka8-secondary))" }} />
                 <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: "hsl(var(--ka8-secondary))" }} />
               </span>
-              IA Embarcada
+              Alta Precisão
             </div>
 
             <h2 className="font-display text-2xl md:text-[38px] font-extrabold text-ka8-text-dark leading-tight mb-3">
-              Sensor de Combustível com{" "}
-              <span className="gradient-text">Inteligência Artificial</span>
+              Sensor de Combustível{" "}
+              <span className="gradient-text">Omnicomm com Alta Precisão</span>
             </h2>
             <p className="text-ka8-text-muted text-sm mb-2 font-medium">
-              Tecnologia Omnicom de ponta global para análise preditiva em tempo real
+              Tecnologia capacitiva de referência global para monitoramento preciso
             </p>
             <p className="text-ka8-text-body text-[15px] leading-relaxed mb-8">
-              Utilizamos sensores Omnicom, referência mundial em telemetria de combustível, equipados com IA embarcada que realiza análise preditiva diretamente no equipamento, sem necessidade de enviar dados para processamento externo.
+              Integração com sensores de combustível Omnicomm de alta precisão, utilizando tecnologia capacitiva que permite margem de erro inferior a 1% e detecção imediata de drenagens ou abastecimentos irregulares.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -76,7 +77,7 @@ const AISensor = () => {
               ))}
             </div>
 
-            {/* Omnicom partner badge */}
+            {/* Omnicomm partner badge */}
             <div
               className="inline-flex items-center gap-3 px-4 py-3 rounded-lg"
               style={{
@@ -87,7 +88,7 @@ const AISensor = () => {
               <span className="text-[11px] font-semibold uppercase tracking-widest text-ka8-text-muted">
                 Tecnologia
               </span>
-              <span className="font-display font-bold text-ka8-text-dark text-sm">Omnicom</span>
+              <span className="font-display font-bold text-ka8-text-dark text-sm">Omnicomm</span>
             </div>
           </div>
 
@@ -105,8 +106,8 @@ const AISensor = () => {
               }}
             />
             <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80"
-              alt="Sensor de combustível com IA embarcada"
+              src={sensorImg}
+              alt="Corte técnico mostrando instalação do sensor de combustível dentro do tanque da embarcação"
               className="w-full h-auto object-cover aspect-[4/3]"
               loading="lazy"
             />

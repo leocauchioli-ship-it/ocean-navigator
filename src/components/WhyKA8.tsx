@@ -5,7 +5,7 @@ const pillars = [
   {
     icon: Satellite,
     title: "Satélite, não celular",
-    desc: "Funciona onde a operação acontece de verdade: alto-mar, rios, canais e áreas remotas. Sem sinal nenhum.",
+    desc: "Funciona onde a operação acontece de verdade: hidrovias, alto-mar e áreas remotas. Sem sinal nenhum.",
   },
   {
     icon: Flag,
@@ -28,7 +28,7 @@ const WhyKA8 = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="quem-somos" className="section-padding section-navy section-kite-bg" ref={ref}>
+    <section className="section-padding section-navy section-kite-bg" ref={ref}>
       <div className="container-ka8 relative z-10">
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
