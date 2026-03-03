@@ -84,10 +84,10 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="#contato" className="btn-ghost text-sm justify-center w-full" onClick={() => setMenuOpen(false)}>
+            <a href="#contato" className="btn-ghost text-sm !flex justify-center w-full !py-[10px] !px-6" onClick={() => setMenuOpen(false)}>
               Fale Conosco
             </a>
-            <a href="#contato" className="btn-solid text-sm justify-center w-full" onClick={() => setMenuOpen(false)}>
+            <a href="#contato" className="btn-solid text-sm !flex justify-center w-full !py-[10px] !px-6" onClick={() => setMenuOpen(false)}>
               Solicitar Demo
             </a>
           </div>
