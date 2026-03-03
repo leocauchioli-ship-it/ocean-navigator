@@ -84,10 +84,10 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="#contato" className="btn-ghost text-sm text-center" onClick={() => setMenuOpen(false)}>
+            <a href="#contato" className="btn-ghost text-sm justify-center w-full" onClick={() => setMenuOpen(false)}>
               Fale Conosco
             </a>
-            <a href="#contato" className="btn-solid text-sm text-center" onClick={() => setMenuOpen(false)}>
+            <a href="#contato" className="btn-solid text-sm justify-center w-full" onClick={() => setMenuOpen(false)}>
               Solicitar Demo
             </a>
           </div>
