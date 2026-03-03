@@ -16,15 +16,15 @@ const ContactCTA = () => {
           <p className="text-lg mb-10" style={{ color: "rgba(255,255,255,0.82)" }}>
             Fale com um especialista e veja como a KA8 pode reduzir custos e trazer clareza à sua frota.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:contato@ka8.com.br" className="btn-white text-base">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="mailto:contato@ka8.com.br" className="btn-white text-base w-full sm:w-auto text-center">
               Solicitar Demonstração
             </a>
             <a
               href="https://wa.me/5515997987632"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-ghost-white text-base"
+              className="btn-ghost-white text-base w-full sm:w-auto text-center justify-center"
             >
               <MessageCircle size={18} /> Fale via WhatsApp
             </a>

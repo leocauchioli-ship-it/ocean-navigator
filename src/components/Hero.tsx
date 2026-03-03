@@ -9,7 +9,7 @@ const segments = [...baseSegments, ...baseSegments, ...baseSegments, ...baseSegm
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[88vh] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[75vh] md:min-h-[88vh] flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0" style={{
         backgroundImage: `url(${heroBg})`,
@@ -40,11 +40,11 @@ const Hero = () => {
             Para gestores de embarcações marítimas e fluviais que precisam saber o que acontece em cada viagem: telemetria, rota e risco.
           </p>
 
-          <div className="flex flex-wrap gap-4 items-center">
-            <a href="#contato" className="btn-white text-base">
+          <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+            <a href="#contato" className="btn-white text-base w-full sm:w-auto text-center">
               Solicitar Demonstração
             </a>
-            <a href="#como-funciona" className="btn-ghost-white text-base">
+            <a href="#como-funciona" className="btn-ghost-white text-base w-full sm:w-auto text-center justify-center">
               <Play size={16} /> Ver como funciona
             </a>
           </div>

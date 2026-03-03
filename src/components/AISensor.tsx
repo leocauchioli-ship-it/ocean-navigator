@@ -60,7 +60,7 @@ const AISensor = () => {
               Integração com sensores de combustível Omnicomm de alta precisão, utilizando tecnologia capacitiva que permite margem de erro inferior a 1% e detecção imediata de drenagens ou abastecimentos irregulares.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {differentials.map((d, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div
