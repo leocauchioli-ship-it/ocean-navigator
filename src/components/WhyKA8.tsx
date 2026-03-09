@@ -4,8 +4,8 @@ import { Satellite, Flag, Link2, Handshake } from "lucide-react";
 const pillars = [
   {
     icon: Satellite,
-    title: "Satélite, não celular",
-    desc: "Funciona onde a operação acontece de verdade: hidrovias, alto-mar e áreas remotas. Sem sinal nenhum.",
+    title: "Operação projetada para disponibilidade contínua.",
+    desc: "Monitoramento com alta resiliência e redundância (99,9% de uptime).",
   },
   {
     icon: Flag,
