@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Satellite, Flag, Link2, Handshake } from "lucide-react";
-import fundoEscuro from "@/assets/fundo-escuro.png";
+import mapaAzul from "@/assets/mapa-azul.jpeg";
 
 const pillars = [
   {
@@ -33,13 +33,13 @@ const WhyKA8 = () => {
       className="section-padding relative overflow-hidden"
       ref={ref}
       style={{
-        backgroundImage: `url(${fundoEscuro})`,
+        backgroundImage: `url(${mapaAzul})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
       {/* Translucent overlay */}
-      <div className="absolute inset-0" style={{ background: 'rgba(3,43,74,0.45)' }} />
+      <div className="absolute inset-0" style={{ background: 'rgba(3,43,74,0.75)' }} />
       <div className="container-ka8 relative z-10">
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
