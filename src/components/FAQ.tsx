@@ -54,42 +54,43 @@ const FAQ = () => {
 
         <div className="max-w-3xl mx-auto space-y-8">
           {categories.map((cat, ci) => (
-            <div key={ci} className="reveal" style={{ transitionDelay: `${ci * 0.1}s` }}>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "rgba(11,164,174,0.08)" }}>
-                  <img src={cat.icon} alt={cat.title} className="w-7 h-7 object-contain" />
-                </div>
-                <h3 className="font-display font-bold text-lg text-primary">{cat.title}</h3>
+            <div key={ci} className="reveal flex gap-5 items-start" style={{ transitionDelay: `${ci * 0.1}s` }}>
+              {/* Lateral icon */}
+              <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 mt-1" style={{ background: "rgba(11,164,174,0.08)" }}>
+                <img src={cat.icon} alt={cat.title} className="w-7 h-7 object-contain" />
               </div>
-              <div className="space-y-2">
-                {cat.items.map((item, ii) => {
-                  const id = `${ci}-${ii}`;
-                  const isOpen = openItem === id;
-                  return (
-                    <div key={id} className="border border-ka8-navy-100 rounded-xl overflow-hidden bg-background">
-                      <button
-                        onClick={() => toggle(id)}
-                        className="w-full flex items-center justify-between p-4 text-left hover:bg-ka8-bg-light transition-colors"
-                      >
-                        <span className="text-sm font-medium pr-4 text-ka8-text-dark">{item.q}</span>
-                        <ChevronDown
-                          size={18}
-                          className={`text-ka8-text-muted shrink-0 transition-transform duration-300 ${
-                            isOpen ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                      <div
-                        className="overflow-hidden transition-all duration-300"
-                        style={{ maxHeight: isOpen ? "500px" : "0" }}
-                      >
-                        <p className="px-4 pb-4 text-sm text-ka8-text-muted leading-relaxed">
-                          {item.a}
-                        </p>
+              <div className="flex-1">
+                <h3 className="font-display font-bold text-lg text-primary mb-4">{cat.title}</h3>
+                <div className="space-y-2">
+                  {cat.items.map((item, ii) => {
+                    const id = `${ci}-${ii}`;
+                    const isOpen = openItem === id;
+                    return (
+                      <div key={id} className="border border-ka8-navy-100 rounded-xl overflow-hidden bg-background">
+                        <button
+                          onClick={() => toggle(id)}
+                          className="w-full flex items-center justify-between p-4 text-left hover:bg-ka8-bg-light transition-colors"
+                        >
+                          <span className="text-sm font-medium pr-4 text-ka8-text-dark">{item.q}</span>
+                          <ChevronDown
+                            size={18}
+                            className={`text-ka8-text-muted shrink-0 transition-transform duration-300 ${
+                              isOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        <div
+                          className="overflow-hidden transition-all duration-300"
+                          style={{ maxHeight: isOpen ? "500px" : "0" }}
+                        >
+                          <p className="px-4 pb-4 text-sm text-ka8-text-muted leading-relaxed">
+                            {item.a}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
           ))}
