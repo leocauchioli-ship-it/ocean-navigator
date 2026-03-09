@@ -39,7 +39,7 @@ const WhyKA8 = () => {
       }}
     >
       {/* Translucent overlay */}
-      <div className="absolute inset-0" style={{ background: 'rgba(3,43,74,0.65)' }} />
+      <div className="absolute inset-0" style={{ background: 'rgba(3,43,74,0.45)' }} />
       <div className="container-ka8 relative z-10">
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
