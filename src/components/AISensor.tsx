@@ -93,12 +93,7 @@ const AISensor = () => {
           </div>
 
           {/* Right - image */}
-          <div
-            className="rounded-2xl overflow-hidden relative"
-            style={{
-              boxShadow: "0 24px 64px rgba(11,164,174,0.2)",
-            }}
-          >
+          <div className="rounded-2xl overflow-hidden relative">
             <div
               className="absolute inset-0 z-10 pointer-events-none"
               style={{

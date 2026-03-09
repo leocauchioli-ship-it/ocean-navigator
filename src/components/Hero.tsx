@@ -10,11 +10,20 @@ const segments = [...baseSegments, ...baseSegments, ...baseSegments, ...baseSegm
 const Hero = () => {
   return (
     <section className="relative min-h-[75vh] md:min-h-[88vh] flex flex-col justify-center overflow-hidden">
-      {/* Background image */}
+      {/* Background image — VIDEO-READY: replace this div with a <video> element when available.
+          Use: <video autoPlay muted loop playsInline poster={heroBg} className="absolute inset-0 w-full h-full object-cover z-[1]">
+            <source src="/assets/hero-animation.webm" type="video/webm" />
+            <source src="/assets/hero-animation.mp4" type="video/mp4" />
+          </video>
+      */}
       <div className="absolute inset-0" style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+      }} />
+      {/* Dark gradient overlay for contrast and video-readiness */}
+      <div className="absolute inset-0 z-[2]" style={{
+        background: 'linear-gradient(to bottom, rgba(1,25,46,0.35), rgba(1,25,46,0.55))',
       }} />
 
       <div className="container-ka8 relative z-10 px-4 pt-24 pb-16 flex-1 flex flex-col justify-center">

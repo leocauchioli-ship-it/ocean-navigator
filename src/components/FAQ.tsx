@@ -56,7 +56,9 @@ const FAQ = () => {
           {categories.map((cat, ci) => (
             <div key={ci} className="reveal" style={{ transitionDelay: `${ci * 0.1}s` }}>
               <div className="flex items-center gap-3 mb-4">
-                <img src={cat.icon} alt={cat.title} className="w-12 h-12 object-contain rounded-full p-1" style={{ background: "rgba(11,164,174,0.08)" }} />
+                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "rgba(11,164,174,0.08)" }}>
+                  <img src={cat.icon} alt={cat.title} className="w-7 h-7 object-contain" />
+                </div>
                 <h3 className="font-display font-bold text-lg text-primary">{cat.title}</h3>
               </div>
               <div className="space-y-2">
