@@ -33,7 +33,7 @@ const WhyKA8 = () => {
       className="section-padding relative overflow-hidden"
       ref={ref}
       style={{
-        backgroundImage: `url(${fundoEscuro})`,
+        backgroundImage: `url(${mapaAzul})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
