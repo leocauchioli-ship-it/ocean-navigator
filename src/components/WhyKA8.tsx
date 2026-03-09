@@ -54,11 +54,11 @@ const WhyKA8 = () => {
           {pillars.map((p, i) => (
             <div
               key={i}
-              className="reveal rounded-xl p-7"
+              className="reveal rounded-xl p-7 backdrop-blur-sm"
               style={{
                 transitionDelay: `${i * 0.1}s`,
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(11,164,174,0.2)",
+                background: "rgba(2,30,52,0.85)",
+                border: "1px solid rgba(11,164,174,0.3)",
               }}
             >
               <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
