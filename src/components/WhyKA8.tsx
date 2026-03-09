@@ -65,7 +65,7 @@ const WhyKA8 = () => {
                 <p.icon size={22} className="text-ka8-secondary" />
               </div>
               <h3 className="font-body font-bold text-base mb-2 text-white">{p.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{p.desc}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>{p.desc}</p>
             </div>
           ))}
         </div>
