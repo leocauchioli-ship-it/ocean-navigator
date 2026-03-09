@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ArrowRight } from "lucide-react";
-import imgStep1 from "@/assets/device-rastreador-satelite-solar.png";
+import imgStep1 from "@/assets/embarcacao-instalacao.jpg";
 import imgStep2 from "@/assets/rastreador-satelite.png";
 import imgStep3 from "@/assets/painel-unificado.png";
 
