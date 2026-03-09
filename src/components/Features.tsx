@@ -116,7 +116,7 @@ const Features = () => {
           </div>
 
           {/* Right - image */}
-          <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(7,57,104,0.12)]">
+          <div className="rounded-2xl overflow-hidden">
             <img src={active.img} alt={active.title} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
           </div>
         </div>

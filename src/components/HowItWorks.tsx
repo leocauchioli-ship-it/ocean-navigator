@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ArrowRight } from "lucide-react";
-import imgStep1 from "@/assets/device-rastreador-satelite-solar.png";
+import imgStep1 from "@/assets/embarcacao-instalacao.jpg";
 import imgStep2 from "@/assets/rastreador-satelite.png";
 import imgStep3 from "@/assets/painel-unificado.png";
 
@@ -65,7 +65,7 @@ const HowItWorks = () => {
               </div>
               <div className={step.reverse ? "md:[direction:ltr]" : ""}>
                 <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(7,57,104,0.15)]">
-                  <img src={step.img} alt={step.alt} className="w-full h-auto object-contain aspect-[4/3] bg-white p-4" loading="lazy" />
+                  <img src={step.img} alt={step.alt} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
                 </div>
               </div>
             </div>
