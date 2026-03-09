@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Satellite, Flag, Link2, Handshake } from "lucide-react";
+import fundoEscuro from "@/assets/fundo-escuro.png";
 
 const pillars = [
   {
