@@ -1,6 +1,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Crosshair, Droplets, Bell, Activity, ArrowRight } from "lucide-react";
 import sensorImg from "@/assets/sensor-combustivel.png";
+import omnicommLogo from "@/assets/omnicomm.svg";
 
 const differentials = [
   {
@@ -88,7 +89,7 @@ const AISensor = () => {
               <span className="text-[11px] font-semibold uppercase tracking-widest text-ka8-text-muted">
                 Tecnologia
               </span>
-              <span className="font-display font-bold text-ka8-text-dark text-sm">Omnicomm</span>
+              <img src={omnicommLogo} alt="Omnicomm" className="h-5 w-auto" />
             </div>
           </div>
 

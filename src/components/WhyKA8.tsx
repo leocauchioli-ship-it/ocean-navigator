@@ -1,12 +1,11 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Satellite, Flag, Link2, Handshake } from "lucide-react";
-import mapaAzul from "@/assets/mapa-azul.jpeg";
 
 const pillars = [
   {
     icon: Satellite,
-    title: "Operação projetada para disponibilidade contínua.",
-    desc: "Monitoramento com alta resiliência e redundância (99,9% de uptime).",
+    title: "Satélite, não celular",
+    desc: "Funciona onde a operação acontece de verdade: hidrovias, alto-mar e áreas remotas. Sem sinal nenhum.",
   },
   {
     icon: Flag,
@@ -25,23 +24,24 @@ const pillars = [
   },
 ];
 
+const metrics = [
+  {
+    number: "5–15%",
+    title: "Redução no combustível",
+    desc: "Monitoramento preciso de consumo que permite identificar desvios e otimizar abastecimento.",
+  },
+  {
+    number: "1",
+    title: "Tudo em um painel",
+    desc: "Posição + Telemetria + Vídeo integrados em uma única plataforma.",
+  },
+];
+
 const WhyKA8 = () => {
   const ref = useScrollReveal();
 
   return (
-    <section
-      className="section-padding relative overflow-hidden"
-      ref={ref}
-    >
-      {/* Background image */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(${mapaAzul})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+    <section className="section-padding section-navy-deep" ref={ref}>
       <div className="container-ka8 relative z-10">
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
@@ -50,22 +50,44 @@ const WhyKA8 = () => {
           </h2>
         </div>
 
+        {/* 4 pillars */}
         <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {pillars.map((p, i) => (
             <div
               key={i}
-              className="reveal rounded-xl p-7 backdrop-blur-sm"
+              className="reveal rounded-xl p-7"
               style={{
                 transitionDelay: `${i * 0.1}s`,
-                background: "rgba(2,30,52,0.85)",
-                border: "1px solid rgba(11,164,174,0.3)",
+                background: "rgba(255,255,255,0.05)",
+                border: "1px solid rgba(11,164,174,0.2)",
               }}
             >
               <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
                 <p.icon size={22} className="text-ka8-secondary" />
               </div>
               <h3 className="font-body font-bold text-base mb-2 text-white">{p.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>{p.desc}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{p.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* 2 metric cards */}
+        <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto mt-6 reveal">
+          {metrics.map((m, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-7 text-center"
+              style={{
+                transitionDelay: `${(pillars.length + i) * 0.1}s`,
+                background: "rgba(255,255,255,0.05)",
+                border: "1px solid rgba(11,164,174,0.2)",
+              }}
+            >
+              <div className="font-display text-4xl md:text-5xl font-extrabold text-ka8-secondary leading-none mb-3">
+                {m.number}
+              </div>
+              <div className="font-body text-base font-bold text-white mb-2">{m.title}</div>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{m.desc}</p>
             </div>
           ))}
         </div>

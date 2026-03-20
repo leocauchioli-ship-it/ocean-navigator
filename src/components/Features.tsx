@@ -1,6 +1,9 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useState } from "react";
 import { Satellite, Gauge, Video, Check } from "lucide-react";
+import rastreamentoGif from "@/assets/rastreamento.gif";
+import telemetriaImg from "@/assets/telemetria.png";
+import videoKa8 from "@/assets/video-ka8.mp4";
 
 const tabs = [
   {
@@ -18,7 +21,7 @@ const tabs = [
       name: "Gestor de Frota",
       role: "Empresa de navegação, PA",
     },
-    img: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=900&auto=format&fit=crop&q=80",
+    media: { type: "img" as const, src: rastreamentoGif },
   },
   {
     id: "fuel",
@@ -35,7 +38,7 @@ const tabs = [
       name: "Diretor Operacional",
       role: "Frota pesqueira, SC",
     },
-    img: "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=900&auto=format&fit=crop&q=80",
+    media: { type: "img" as const, src: telemetriaImg },
   },
   {
     id: "video",
@@ -52,7 +55,7 @@ const tabs = [
       name: "Gerente de Operações",
       role: "Transporte marítimo, RJ",
     },
-    img: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=900&auto=format&fit=crop&q=80",
+    media: { type: "video" as const, src: videoKa8 },
   },
 ];
 
@@ -115,9 +118,21 @@ const Features = () => {
             </div>
           </div>
 
-          {/* Right - image */}
-          <div className="rounded-2xl overflow-hidden">
-            <img src={active.img} alt={active.title} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
+          {/* Right - media */}
+          <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(7,57,104,0.12)]">
+            {active.media.type === "video" ? (
+              <video
+                key={active.media.src}
+                src={active.media.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto object-cover aspect-[4/3]"
+              />
+            ) : (
+              <img src={active.media.src} alt={active.title} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
+            )}
           </div>
         </div>
       </div>

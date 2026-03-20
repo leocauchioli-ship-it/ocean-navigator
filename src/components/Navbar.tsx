@@ -53,7 +53,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="#contato" className={`text-sm ${scrolled ? "btn-ghost" : "btn-ghost-white"}`}>
+          <a
+            href="https://wa.me/5515991675910"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm ${scrolled ? "btn-ghost" : "btn-ghost-white"}`}
+          >
             Fale Conosco
           </a>
           <a href="#contato" className={`text-sm ${scrolled ? "btn-solid" : "btn-white"}`}>
@@ -84,7 +89,13 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="#contato" className="btn-ghost text-sm !flex justify-center w-full !py-[10px] !px-6" onClick={() => setMenuOpen(false)}>
+            <a
+              href="https://wa.me/5515991675910"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost text-sm !flex justify-center w-full !py-[10px] !px-6"
+              onClick={() => setMenuOpen(false)}
+            >
               Fale Conosco
             </a>
             <a href="#contato" className="btn-solid text-sm !flex justify-center w-full !py-[10px] !px-6" onClick={() => setMenuOpen(false)}>

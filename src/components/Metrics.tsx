@@ -2,7 +2,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const metrics = [
   { number: "24/7", title: "Cobertura contínua", desc: "Monitoramento ininterrupto, sem falhas de sinal ou interrupções." },
-  { number: "-40%", title: "Redução de custos", desc: "Clientes reportam redução significativa em custos operacionais." },
+  { number: "5–15%", title: "Redução no combustível", desc: "Monitoramento preciso de consumo que permite identificar desvios e otimizar abastecimento." },
   { number: "99,9%", title: "Alta disponibilidade", desc: "Comunicação satelital com redundância, garantindo continuidade operacional mesmo em áreas remotas." },
   { number: "1", title: "Tudo em um painel", desc: "Posição + Telemetria + Vídeo integrados em uma única plataforma." },
 ];
