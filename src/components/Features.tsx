@@ -2,7 +2,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useState } from "react";
 import { Satellite, Gauge, Video, Check } from "lucide-react";
 import rastreamentoGif from "@/assets/rastreamento.gif";
-import telemetriaImg from "@/assets/telemetria.png";
+import telemetriaImg from "@/assets/telemetria.gif";
 import videoKa8 from "@/assets/video-ka8.mp4";
 
 const tabs = [
