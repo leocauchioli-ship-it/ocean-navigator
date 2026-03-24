@@ -27,7 +27,7 @@ const pillars = [
 const metrics = [
   {
     icon: TrendingDown,
-    number: "5–15%",
+    number: "5~15%",
     title: "Redução no combustível",
     desc: "Monitoramento preciso de consumo que permite identificar desvios e otimizar abastecimento.",
   },
