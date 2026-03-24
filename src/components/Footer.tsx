@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <img src={logoLight} alt="KA8" className="h-12 mb-4" />
+            <img src={logoLight} alt="KA8" className="h-14 mb-4" />
             <p className="text-sm font-medium leading-relaxed mb-1" style={{ color: "rgba(255,255,255,0.7)" }}>
               Visão do Alto, Controle Total
             </p>
@@ -51,10 +51,10 @@ const Footer = () => {
                 <Mail size={14} /> contato@ka8.com.br
               </a>
               <a href="tel:+5515991675910" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <Phone size={14} /> +55 (15) 99167-5910
+                <Phone size={14} /> (15) 99167-5910
               </a>
               <a href="https://wa.me/5515991675910" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ka8-secondary transition-colors">
-                <MessageCircle size={14} /> WhatsApp: +55 (15) 99167-5910
+                <MessageCircle size={14} /> WhatsApp: (15) 99167-5910
               </a>
               <p>São Paulo/SP • Belém/PA, Brasil</p>
             </div>

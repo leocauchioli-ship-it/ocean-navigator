@@ -119,7 +119,7 @@ const Features = () => {
           </div>
 
           {/* Right - media */}
-          <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(7,57,104,0.12)]">
+          <div className="rounded-2xl shadow-[0_24px_64px_rgba(7,57,104,0.12)]">
             {active.media.type === "video" ? (
               <video
                 key={active.media.src}
@@ -128,10 +128,10 @@ const Features = () => {
                 muted
                 loop
                 playsInline
-                className="w-full h-auto object-cover aspect-[4/3]"
+                className="w-full h-auto object-cover aspect-[4/3] rounded-2xl overflow-hidden"
               />
             ) : (
-              <img src={active.media.src} alt={active.title} className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
+              <img src={active.media.src} alt={active.title} className="w-full h-auto object-cover aspect-[4/3] rounded-2xl overflow-hidden" loading="lazy" />
             )}
           </div>
         </div>
