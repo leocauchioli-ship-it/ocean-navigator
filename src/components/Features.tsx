@@ -38,7 +38,7 @@ const tabs = [
       name: "Diretor Operacional",
       role: "Frota pesqueira, SC",
     },
-    media: { type: "img" as const, src: telemetriaImg, objectPosition: "left center" },
+    media: { type: "img" as const, src: telemetriaImg, objectPosition: "right center" },
   },
   {
     id: "video",
