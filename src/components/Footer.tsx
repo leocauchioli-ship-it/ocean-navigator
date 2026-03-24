@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <img src={logoLight} alt="KA8" className="h-14 mb-4" />
+            <img src={logoLight} alt="KA8" className="h-24 mb-4" />
             <p className="text-sm font-medium leading-relaxed mb-1" style={{ color: "rgba(255,255,255,0.7)" }}>
               Visão do Alto, Controle Total
             </p>

@@ -55,7 +55,7 @@ const WhyKA8 = () => {
           {pillars.map((p, i) => (
             <div
               key={i}
-              className="reveal rounded-xl p-7 transition-all duration-200"
+              className="reveal rounded-xl p-7 transition-all duration-300 ease-out cursor-default"
               style={{
                 transitionDelay: `${i * 0.1}s`,
                 background: "rgba(255,255,255,0.05)",
@@ -63,15 +63,19 @@ const WhyKA8 = () => {
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.transform = "translateY(-2px)";
-                el.style.borderColor = "rgba(11,164,174,0.5)";
-                el.style.background = "rgba(255,255,255,0.08)";
+                el.style.transitionDelay = "0s";
+                el.style.transform = "translateY(-6px) scale(1.02)";
+                el.style.borderColor = "rgba(11,164,174,0.6)";
+                el.style.background = "rgba(11,164,174,0.1)";
+                el.style.boxShadow = "0 12px 32px rgba(11,164,174,0.18)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLElement;
+                el.style.transitionDelay = "0s";
                 el.style.transform = "";
                 el.style.borderColor = "rgba(11,164,174,0.2)";
                 el.style.background = "rgba(255,255,255,0.05)";
+                el.style.boxShadow = "";
               }}
             >
               <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
@@ -88,7 +92,7 @@ const WhyKA8 = () => {
           {metrics.map((m, i) => (
             <div
               key={i}
-              className="reveal rounded-xl p-7 transition-all duration-200"
+              className="reveal rounded-xl p-7 transition-all duration-300 ease-out cursor-default"
               style={{
                 transitionDelay: `${(pillars.length + i) * 0.1}s`,
                 background: "rgba(255,255,255,0.05)",
@@ -96,15 +100,19 @@ const WhyKA8 = () => {
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement;
-                el.style.transform = "translateY(-2px)";
-                el.style.borderColor = "rgba(11,164,174,0.5)";
-                el.style.background = "rgba(255,255,255,0.08)";
+                el.style.transitionDelay = "0s";
+                el.style.transform = "translateY(-6px) scale(1.02)";
+                el.style.borderColor = "rgba(11,164,174,0.6)";
+                el.style.background = "rgba(11,164,174,0.1)";
+                el.style.boxShadow = "0 12px 32px rgba(11,164,174,0.18)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLElement;
+                el.style.transitionDelay = "0s";
                 el.style.transform = "";
                 el.style.borderColor = "rgba(11,164,174,0.2)";
                 el.style.background = "rgba(255,255,255,0.05)";
+                el.style.boxShadow = "";
               }}
             >
               <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
