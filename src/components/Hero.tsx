@@ -3,7 +3,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 const baseSegments = [
   "Empresa de Pesca", "Transporte de Carga", "Embarcações de Apoio",
-  "Petroleiros", "Rebocadores", "Operações Fluviais", "Iates e Lanchas",
+  "Petroleiros", "Rebocadores", "Operações Fluviais",
 ];
 const segments = [...baseSegments, ...baseSegments, ...baseSegments, ...baseSegments];
 
