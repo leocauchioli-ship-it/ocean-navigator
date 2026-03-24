@@ -27,13 +27,11 @@ const pillars = [
 const metrics = [
   {
     icon: TrendingDown,
-    number: "5~15%",
-    title: "Redução no combustível",
+    title: "5~15% de redução no combustível",
     desc: "Monitoramento preciso de consumo que permite identificar desvios e otimizar abastecimento.",
   },
   {
     icon: LayoutDashboard,
-    number: "1",
     title: "Tudo em um painel",
     desc: "Posição + Telemetria + Vídeo integrados em uma única plataforma.",
   },
@@ -90,7 +88,7 @@ const WhyKA8 = () => {
           {metrics.map((m, i) => (
             <div
               key={i}
-              className="reveal rounded-xl p-7 text-center transition-all duration-200"
+              className="reveal rounded-xl p-7 transition-all duration-200"
               style={{
                 transitionDelay: `${(pillars.length + i) * 0.1}s`,
                 background: "rgba(255,255,255,0.05)",
@@ -109,13 +107,10 @@ const WhyKA8 = () => {
                 el.style.background = "rgba(255,255,255,0.05)";
               }}
             >
-              <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 mx-auto" style={{ background: "rgba(11,164,174,0.15)" }}>
+              <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(11,164,174,0.15)" }}>
                 <m.icon size={22} className="text-ka8-secondary" />
               </div>
-              <div className="font-display text-4xl md:text-5xl font-extrabold text-ka8-secondary leading-none mb-3">
-                {m.number}
-              </div>
-              <div className="font-body text-base font-bold text-white mb-2">{m.title}</div>
+              <h3 className="font-body font-bold text-base mb-2 text-white">{m.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{m.desc}</p>
             </div>
           ))}
