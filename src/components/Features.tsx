@@ -38,7 +38,7 @@ const tabs = [
       name: "Diretor Operacional",
       role: "Frota pesqueira, SC",
     },
-    media: { type: "img" as const, src: telemetriaImg },
+    media: { type: "img" as const, src: telemetriaImg, objectPosition: "left center" },
   },
   {
     id: "video",
@@ -131,7 +131,7 @@ const Features = () => {
                 className="w-full h-auto object-cover aspect-[4/3] rounded-2xl overflow-hidden"
               />
             ) : (
-              <img src={active.media.src} alt={active.title} className="w-full h-auto object-cover aspect-[4/3] rounded-2xl overflow-hidden" loading="lazy" />
+              <img src={active.media.src} alt={active.title} className="w-full h-auto object-cover aspect-[4/3] rounded-2xl overflow-hidden" style={{ objectPosition: (active.media as { type: "img"; src: string; objectPosition?: string }).objectPosition ?? "center" }} loading="lazy" />
             )}
           </div>
         </div>
