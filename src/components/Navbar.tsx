@@ -5,6 +5,7 @@ import logoPos from "@/assets/logo-ka8-pos.png";
 
 const navLinks = [
   { label: "Solução", href: "#solucao" },
+  { label: "AVL & Marinha", href: "#avl-marinha" },
   { label: "Como Funciona", href: "#como-funciona" },
   { label: "Casos de Uso", href: "#casos-de-uso" },
   { label: "Quem Somos", href: "#quem-somos" },
