@@ -39,17 +39,17 @@ const AVLCompliance = () => {
                 href="https://wa.me/5515991675910"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-white text-base inline-flex items-center gap-2 justify-center"
+                className="btn-white text-base inline-flex items-center gap-2 justify-center whitespace-nowrap"
               >
-                <MessageCircle size={16} /> Falar no WhatsApp sobre homologação
+                <MessageCircle size={16} /> Falar no WhatsApp
               </a>
               <a
                 href={MARINHA_NORMAM_204_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[15px] font-semibold text-primary hover:gap-3 transition-all justify-center"
+                className="inline-flex items-center gap-2 text-[15px] font-semibold text-primary hover:gap-3 transition-all justify-center whitespace-nowrap"
               >
-                Veja mais na NORMAM-204 <ExternalLink size={16} />
+                NORMAM-204 <ExternalLink size={16} />
               </a>
             </div>
           </div>
