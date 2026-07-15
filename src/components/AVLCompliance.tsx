@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ShieldCheck, MessageCircle, ExternalLink } from "lucide-react";
-import avlDiagram from "@/assets/rastreador-satelite.png";
+import avlDiagram from "@/assets/avl-diagrama.png";
 
 const MARINHA_NORMAM_204_URL =
   "https://assets.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/Monitoramento_EMB_NAV_INT.pdf";
@@ -58,7 +58,7 @@ const AVLCompliance = () => {
           <div>
             <img
               src={avlDiagram}
-              alt="Diagrama do rastreador embarcado enviando sinal via satélite até a KA8, que comunica os dados à Marinha (AVL)"
+              alt="Diagrama do fluxo AVL: embarcação envia sinal via satélite até a estação KA8, que transmite os dados à Marinha do Brasil"
               className="w-full h-auto rounded-2xl shadow-[0_24px_64px_rgba(7,57,104,0.15)]"
               loading="lazy"
             />

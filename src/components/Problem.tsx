@@ -26,6 +26,9 @@ const Problem = () => {
     <section className="section-padding section-white" ref={ref}>
       <div className="container-ka8">
         <div className="text-center mb-12 reveal">
+          <div className="badge-ka8 mb-4 mx-auto">
+            Tecnologia aplicada para embarcações
+          </div>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 text-ka8-text-dark">
             A realidade de quem opera no ambiente aquático
           </h2>

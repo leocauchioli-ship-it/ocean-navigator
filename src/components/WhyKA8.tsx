@@ -46,7 +46,7 @@ const WhyKA8 = () => {
         <div className="text-center mb-12 reveal">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4 max-w-3xl mx-auto text-white">
             Não é produto genérico adaptado do terrestre.{" "}
-            <span className="text-ka8-secondary">É solução pensada para o mar.</span>
+            <span className="text-ka8-secondary">É solução pensada para embarcações.</span>
           </h2>
         </div>
 
